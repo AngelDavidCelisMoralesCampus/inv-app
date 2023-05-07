@@ -15,7 +15,7 @@ export class MainMenu extends HTMLElement{
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Clientes</a>
+                            <a class="nav-link" href="customers.html">Clientes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Productos</a>
@@ -24,7 +24,6 @@ export class MainMenu extends HTMLElement{
                 </div>
             </div>
         </nav>
-
         `
     }
 }
