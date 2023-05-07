@@ -18,9 +18,19 @@ export class CustomerForm extends HTMLElement{
                                             <input type="date" class="form-control" id="createdAt" name="createdAt">                  
                                         </div>
 
-                                        <div class="col-4">
-                                             <label for="cc" class="form-label">Documento del Cliente</label>
-                                            <input type="text" class="form-control" id="cc" name="cc">
+                                        <div class="col-3">
+                                            <label for="cc" class="form-label">Tipo de Documento</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected style="">Seleccione el tipo</option>
+                                                <option value="1">Tarjeta de Identidad</option>
+                                                <option value="2">Cedula de Ciudadania</option>
+                                                <option value="3">Otro...</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-3">
+                                            <label for="cc" class="form-label">Documento del Cliente</label>
+                                            <input type="number" class="form-control" id="cc" name="cc">
                                         </div>
 
                                         <div class="col-3">
@@ -39,7 +49,7 @@ export class CustomerForm extends HTMLElement{
                                         </div>                
                                         <div class="col-3">
                                             <label for="telefono" class="form-label">Nro de Telefono</label>
-                                            <input type="date" class="form-control" id="telefono" name="telefono">                  
+                                            <input type="text" class="form-control" id="telefono" name="telefono">                  
                                         </div>
                                         <div class="col-3">
                                             <label for="fechanac" class="form-label">Fecha de Nacimiento</label>
@@ -50,10 +60,10 @@ export class CustomerForm extends HTMLElement{
                             </div>        
                         </div>                                     
                     </div> 
-                        <div class="container mt-4 text-center">
-                            <a href="#" class="btn btn-success" id="btnGuardar">Guardar cliente</a>
-                        </div>
-                 </div>
+                    <div class="container mt-4 text-center">
+                        <a href="#" class="btn btn-success" id="btnGuardar">Guardar cliente</a>
+                    </div>
+                </div>
         </div>`
         }
 }
